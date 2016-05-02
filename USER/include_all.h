@@ -1,0 +1,12 @@
+#include <stdarg.h>
+#include <stdio.h>
+#include "stm32f10x.h"
+#include "led.h"
+#include "systick.h"
+#include "usart.h"
+#include "pwm.h"
+#include "adc.h"
+#include "variable.h"
+#include "motor.h"
+#include "timer.h"
+#include "IWDG.h"

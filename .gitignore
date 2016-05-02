@@ -81,3 +81,9 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+#myignore
+Slickedit/
+Listing/
+Output/
+Debug/
