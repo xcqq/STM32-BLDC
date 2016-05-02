@@ -45,7 +45,7 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>..\Output\</OutputDirectory>
-          <OutputName>STM32-DEMO</OutputName>
+          <OutputName>BLMC</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>0</CreateHexFile>
@@ -405,9 +405,9 @@
           <GroupName>STARTUPCODE</GroupName>
           <Files>
             <File>
-              <FileName>startup_stm32f10x_hd.s</FileName>
+              <FileName>startup_stm32f10x_md.s</FileName>
               <FileType>2</FileType>
-              <FilePath>..\CMSIS\startup\startup_stm32f10x_hd.s</FilePath>
+              <FilePath>..\CMSIS\startup\startup_stm32f10x_md.s</FilePath>
             </File>
           </Files>
         </Group>
@@ -415,59 +415,59 @@
           <GroupName>USER</GroupName>
           <Files>
             <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\main.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x_it.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\stm32f10x_it.c</FilePath>
-            </File>
-            <File>
               <FileName>adc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\adc.c</FilePath>
+              <FilePath>..\USER\adc.c</FilePath>
+            </File>
+            <File>
+              <FileName>IWDG.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\IWDG.c</FilePath>
             </File>
             <File>
               <FileName>led.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\led.c</FilePath>
+              <FilePath>..\USER\led.c</FilePath>
             </File>
             <File>
-              <FileName>pwm.c</FileName>
+              <FileName>main.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\pwm.c</FilePath>
-            </File>
-            <File>
-              <FileName>SysTick.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\SysTick.c</FilePath>
-            </File>
-            <File>
-              <FileName>usart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\usart.c</FilePath>
-            </File>
-            <File>
-              <FileName>variable.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\variable.c</FilePath>
+              <FilePath>..\USER\main.c</FilePath>
             </File>
             <File>
               <FileName>motor.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\motor.c</FilePath>
+              <FilePath>..\USER\motor.c</FilePath>
             </File>
             <File>
-              <FileName>include_all.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\include_all.h</FilePath>
+              <FileName>pwm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\pwm.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_it.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\stm32f10x_it.c</FilePath>
+            </File>
+            <File>
+              <FileName>SysTick.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\SysTick.c</FilePath>
             </File>
             <File>
               <FileName>Timer.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Timer.c</FilePath>
+              <FilePath>..\USER\Timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>variable.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\variable.c</FilePath>
             </File>
           </Files>
         </Group>
